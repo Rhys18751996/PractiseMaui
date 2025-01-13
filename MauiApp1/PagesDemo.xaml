@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.PagesDemo"
+             Title="PagesDemo">
+
+    <ScrollView>
+        <VerticalStackLayout 
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                Text="Examples of different MAUI Pages"
+                Style="{StaticResource Headline}" />
+
+            <Button
+                x:Name="NavToContentPageDemoBtn"
+                Text="Navigate to ContentPageDemo.xaml" 
+                Clicked="NavigateToContentPageDemo_Clicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                Text="Navigate to FlyoutPageDemo" 
+                Clicked="NavigateToFlyoutPageDemo_Clicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                Text="Navigate to TabbedPageDemo" 
+                Clicked="NavigateToTabbedPageDemo_Clicked"
+                HorizontalOptions="Fill" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>
