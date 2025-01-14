@@ -1,4 +1,7 @@
-﻿namespace MauiApp1
+﻿using MauiApp1.Views.ControlsDemo;
+using MauiApp1.Views.Todo;
+
+namespace MauiApp1
 {
     public partial class MainPage : ContentPage
     {
@@ -26,5 +29,18 @@
 			var navigationPage = new NavigationPage(new PagesDemo());
 			await Navigation.PushAsync(navigationPage);
 		}
+
+		private async void ControlsDemo_Clicked(object sender, EventArgs e)
+		{
+			var navigationPage = new NavigationPage(new ControlsPage());
+			await Navigation.PushAsync(navigationPage);
+		}
+
+		private async void TodoDbCommands_Clicked(object sender, EventArgs e)
+		{
+			var navigationPage = new NavigationPage(new TodoDbCommandsPage());
+			await Navigation.PushAsync(navigationPage);
+		}
+		
 	}
 }

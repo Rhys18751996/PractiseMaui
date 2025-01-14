@@ -11,6 +11,7 @@
             <Label
                 Text="Select One"
                 Style="{StaticResource Headline}"/>
+            
             <Button
                 Text="MAUI Pages Demo" 
                 Clicked="PagesDemo_Clicked"
@@ -19,6 +20,16 @@
             <Button
                 x:Name="LayoutsDemoBtn"
                 Text="MAUI Page Layouts Demo" 
+                HorizontalOptions="Fill" />
+
+            <Button
+                Text="MAUI Controls Demo" 
+                Clicked="ControlsDemo_Clicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                Text="ToDoDb Commands" 
+                Clicked="TodoDbCommands_Clicked"
                 HorizontalOptions="Fill" />
 
         </VerticalStackLayout>

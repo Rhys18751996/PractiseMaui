@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using MauiApp1.Data;
+using Microsoft.Extensions.Logging;
 
 namespace MauiApp1
 {
@@ -19,7 +20,9 @@ namespace MauiApp1
     		builder.Logging.AddDebug();
 #endif
 
-            return builder.Build();
+			builder.Services.AddSingleton<TodoItemDatabase>();
+
+			return builder.Build();
         }
     }
 }
