@@ -28,5 +28,8 @@
 	</array>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/appicon.appiconset</string>
+	
+	<key>NSDocumentsUsageDescription</key>
+	<string>App needs access to Documents folder</string>
 </dict>
 </plist>

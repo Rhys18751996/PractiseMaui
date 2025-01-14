@@ -29,6 +29,7 @@ public partial class TodoListPage : ContentPage
 		InitializeComponent();
 
 		database = new TodoItemDatabase();// todoItemDatabase;
+		InitializeTodoItemsAsync();
 		BindingContext = this;
 	}
 
@@ -36,7 +37,7 @@ public partial class TodoListPage : ContentPage
 	protected override async void OnAppearing()
 	{
 		base.OnAppearing();
-		await InitializeTodoItemsAsync();
+		
 	}
 
 

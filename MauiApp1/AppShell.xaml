@@ -7,9 +7,9 @@
     Shell.FlyoutBehavior="Flyout"
     Title="MauiApp1">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
-    
+    <ShellItem>
+        <ShellContent Route="MainPage" Title="Home" ContentTemplate="{DataTemplate local:MainPage}" />
+        <ShellContent Route="LayoutDemoPages" ContentTemplate="{DataTemplate local:PagesDemo}" />
+    </ShellItem>
+
 </Shell>

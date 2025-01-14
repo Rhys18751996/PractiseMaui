@@ -20,8 +20,14 @@ namespace MauiApp1
 
         private async void PagesDemo_Clicked(object sender, EventArgs e)
         {
-			var navigationPage = new NavigationPage(new PagesDemo());
-			await Navigation.PushAsync(navigationPage);
+			await Shell.Current.GoToAsync("//LayoutDemoPages");
+
+			// Pass parameters while navigating
+			//await Shell.Current.GoToAsync("//second?id=123");
+
+
+			//var navigationPage = new NavigationPage(new PagesDemo());
+			//await Navigation.PushAsync(navigationPage);
 		}
 
 		private async void LayoutsDemo_Clicked(object sender, EventArgs e)
