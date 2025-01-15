@@ -47,6 +47,9 @@ public partial class TodoDbCommandsPage : ContentPage
 
 	private async void ShowTodoData_Clicked(object sender, EventArgs e)
 	{
+		//var navPage = new NavigationPage(new TodoListPage());
+		//await Navigation.PushAsync(navPage);
+		
 		await Navigation.PushAsync(new TodoListPage());
 	}
 	

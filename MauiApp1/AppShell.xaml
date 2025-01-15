@@ -70,10 +70,10 @@
     </Shell.FlyoutFooter>
 
 
-    <FlyoutItem Route="animals"
+    <FlyoutItem Route="mainmenu"
                 FlyoutDisplayOptions="AsMultipleItems">
-        <Tab Title="Domestic"
-             Route="domestic"
+        <Tab Title="Home"
+             Route="home"
              Icon="paw.png">
             <ShellContent Route="home"
                           Style="{StaticResource DomesticShell}"
@@ -87,35 +87,24 @@
                           ContentTemplate="{DataTemplate views:LayoutsDemo}" />
         </Tab>
 
-        <!--
-
-        Shell has implicit conversion operators that enable the Shell visual hierarchy to be simplified.
-        This is possible because a subclassed Shell object can only ever contain a FlyoutItem object or a TabBar object,
-        which can only ever contain Tab objects, which can only ever contain ShellContent objects.
-
-        The code below demonstrates using these implicit conversion operators to simplify the visual hierarchy. Code that
-        relies on the implicit conversion operators will produce intellisense errors in the Visual Studio XAML editor. However,
-        this code is valid and does build.
-               
-        -->
-        <ShellContent Route="pagesdemo"
-                      Style="{StaticResource MonkeysShell}"
-                      Title="Pages Demo"
-                      Icon="monkey.png"
-                      ContentTemplate="{DataTemplate views:PagesDemo}" />
-        
-        <ShellContent Route="layoutsdemo"
-                      Style="{StaticResource ElephantsShell}"
-                      Title="layouts"
-                      Icon="elephant.png"
-                      ContentTemplate="{DataTemplate views:LayoutsDemo}" />
-
-        <ShellContent Route="controlspage"
-                      Style="{StaticResource BearsShell}"
-                      Title="Controls"
-                      Icon="bear.png"
-                      ContentTemplate="{DataTemplate views:ControlsPage}" />
+    <ShellContent Route="pagesdemo"
+                    Style="{StaticResource MonkeysShell}"
+                    Title="Pages Demo"
+                    Icon="monkey.png"
+                    ContentTemplate="{DataTemplate views:PagesDemo}" />
     </FlyoutItem>
+
+    <ShellContent Route="layoutsdemo"
+                    Style="{StaticResource ElephantsShell}"
+                    Title="layouts"
+                    Icon="elephant.png"
+                    ContentTemplate="{DataTemplate views:LayoutsDemo}" />
+
+    <ShellContent Route="controlspage"
+                    Style="{StaticResource BearsShell}"
+                    Title="Controls"
+                    Icon="bear.png"
+                    ContentTemplate="{DataTemplate views:ControlsPage}" />
 
     <ShellContent Route="about"
                   Style="{StaticResource AboutShell}"
@@ -132,23 +121,13 @@
 
 
 
-
-    <!--<FlyoutItem Title="Home"
-                Icon="icon_notes.png">
-        <Tab>
-            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
-        </Tab>
-    </FlyoutItem>
-    <FlyoutItem Title="pagesDemo"
-                Icon="icon_about.png">
-        <Tab>
-            <ShellContent ContentTemplate="{DataTemplate views:PagesDemo}" />
-        </Tab>
-    </FlyoutItem>
-
-    
     <ShellItem>
-        <ShellContent Route="PagesDemo" ContentTemplate="{DataTemplate views:PagesDemo}" />
-        <ShellContent Route="LayoutsDemo" ContentTemplate="{DataTemplate views:LayoutsDemo}" />
-    </ShellItem>-->
+        <!--These are for using the links directly in a page with a button etc-->
+        <ShellContent Route="pagesdemo_link" Style="{StaticResource MonkeysShell}" ContentTemplate="{DataTemplate views:PagesDemo}" />
+        <ShellContent Route="layoutsdemo_link" Style="{StaticResource ElephantsShell}" ContentTemplate="{DataTemplate views:LayoutsDemo}" />
+        <ShellContent Route="controlspage_link" Style="{StaticResource BearsShell}" ContentTemplate="{DataTemplate views:ControlsPage}" />
+        <ShellContent Route="about_link" Style="{StaticResource AboutShell}" ContentTemplate="{DataTemplate views:AboutPage}" />
+
+        <ShellContent Route="todo_link" Style="{StaticResource AboutShell}" ContentTemplate="{DataTemplate views:TodoDbCommandsPage}" />
+    </ShellItem>
 </Shell>
