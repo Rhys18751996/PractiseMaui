@@ -1,3 +1,5 @@
+using CommunityToolkit.Maui.Alerts;
+using CommunityToolkit.Maui.Core;
 using MauiApp1.Data;
 using MauiApp1.Models.TodoDbModels;
 
@@ -33,6 +35,12 @@ public partial class TodoDbCommandsPage : ContentPage
 		{
 			await new TodoItemDatabase().SaveItemAsync(item);
 		}
+
+		CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
+		await Toast.Make("Data has been added!",
+				  ToastDuration.Long,
+				  16)
+			.Show(cancellationTokenSource.Token);
 	}
 
 	private async void DeleteTodoItemTableData_Clicked(object sender, EventArgs e)

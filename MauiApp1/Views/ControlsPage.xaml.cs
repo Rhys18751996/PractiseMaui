@@ -12,4 +12,10 @@ public partial class ControlsPage : ContentPage
 	{
 		await Navigation.PushAsync(new ListViewControlPageDemo());
 	}
+
+	private async void AlertsDemo_Clicked(object sender, EventArgs e)
+	{
+		await Navigation.PushAsync(new AlertsControlsPage());
+	}
+	
 }

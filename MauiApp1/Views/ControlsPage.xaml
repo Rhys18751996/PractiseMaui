@@ -18,6 +18,11 @@
                 Clicked="ListViewControlDemo_Clicked"
                 HorizontalOptions="Fill" />
 
+            <Button
+                Text="Alerts Demo" 
+                Clicked="AlertsDemo_Clicked"
+                HorizontalOptions="Fill" />
+
         </VerticalStackLayout>
     </ScrollView>
     
