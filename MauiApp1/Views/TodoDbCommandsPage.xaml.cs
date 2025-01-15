@@ -33,7 +33,13 @@ public partial class TodoDbCommandsPage : ContentPage
 
 		foreach (var item in todoItems)
 		{
-			await new TodoItemDatabase().SaveItemAsync(item);
+			try
+			{
+				await new TodoItemDatabase().SaveItemAsync(item);
+			}
+			catch (Exception ex)
+			{
+			}
 		}
 
 		CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
