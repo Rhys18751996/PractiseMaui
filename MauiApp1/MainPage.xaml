@@ -33,6 +33,12 @@
                 Clicked="TodoDbCommands_Clicked"
                 HorizontalOptions="Fill" />
 
+            <Button
+                Text="ExternalApisPage" 
+                Clicked="ExternalApisPage_Clicked"
+                HorizontalOptions="Fill" />
+            
+
         </VerticalStackLayout>
     </ScrollView>
 

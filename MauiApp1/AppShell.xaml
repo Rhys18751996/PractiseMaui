@@ -129,5 +129,6 @@
         <ShellContent Route="about_link" Style="{StaticResource AboutShell}" ContentTemplate="{DataTemplate views:AboutPage}" />
 
         <ShellContent Route="todo_link" Style="{StaticResource AboutShell}" ContentTemplate="{DataTemplate views:TodoDbCommandsPage}" />
+        <ShellContent Route="externalapis_link" Style="{StaticResource AboutShell}" ContentTemplate="{DataTemplate views:ExternalApisPage}" />
     </ShellItem>
 </Shell>

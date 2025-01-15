@@ -21,14 +21,19 @@ namespace MauiApp1
 			await Shell.Current.GoToAsync("//controlspage_link");
 		}
 
+		private async void LayoutsDemoBtn_Clicked(object sender, EventArgs e)
+		{
+			await Shell.Current.GoToAsync("//layoutsdemo_link");
+		}
+
 		private async void TodoDbCommands_Clicked(object sender, EventArgs e)
 		{
 			await Shell.Current.GoToAsync("//todo_link");
 		}
 
-		private async void LayoutsDemoBtn_Clicked(object sender, EventArgs e)
+		private async void ExternalApisPage_Clicked(object sender, EventArgs e)
 		{
-			await Shell.Current.GoToAsync("//layoutsdemo_link");
+			await Shell.Current.GoToAsync("//externalapis_link");
 		}
 	}
 }
