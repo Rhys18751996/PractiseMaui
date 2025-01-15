@@ -13,17 +13,17 @@
                 Style="{StaticResource Headline}"/>
             
             <Button
-                Text="MAUI Pages Demo" 
+                Text="Page Examples" 
                 Clicked="PagesDemo_Clicked"
                 HorizontalOptions="Fill" />
 
             <Button
                 x:Name="LayoutsDemoBtn"
-                Text="MAUI Page Layouts Demo" 
+                Text="Layout examples" 
                 HorizontalOptions="Fill" />
 
             <Button
-                Text="MAUI Controls Demo" 
+                Text="Controls Examples" 
                 Clicked="ControlsDemo_Clicked"
                 HorizontalOptions="Fill" />
 
