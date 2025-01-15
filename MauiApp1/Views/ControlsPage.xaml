@@ -23,6 +23,11 @@
                 Clicked="AlertsDemo_Clicked"
                 HorizontalOptions="Fill" />
 
+            <Button
+                Text="Graphics Canvas Demo" 
+                Clicked="GraphicsDemo_Clicked"
+                HorizontalOptions="Fill" />
+
         </VerticalStackLayout>
     </ScrollView>
     

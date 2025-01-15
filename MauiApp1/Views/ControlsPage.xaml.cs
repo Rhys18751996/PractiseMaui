@@ -17,5 +17,10 @@ public partial class ControlsPage : ContentPage
 	{
 		await Navigation.PushAsync(new AlertsControlsPage());
 	}
+
+	private async void GraphicsDemo_Clicked(object sender, EventArgs e)
+	{
+		await Navigation.PushAsync(new GraphicsPage());
+	}
 	
 }

@@ -1,3 +1,6 @@
+using CommunityToolkit.Maui.Alerts;
+using System.Threading;
+
 namespace MauiApp1.Views;
 
 public partial class PagesDemo : ContentPage
@@ -23,17 +26,45 @@ public partial class PagesDemo : ContentPage
 
 	private async void NavigateToContentPageDemo_Clicked(object sender, EventArgs e)
 	{
-		await Navigation.PushAsync(new ContentPageDemo());
-		//await Shell.Current.GoToAsync("ContentPageDemo");
+		try
+		{
+			await Navigation.PushAsync(new ContentPageDemo());
+		}
+		catch (Exception ex)
+		{
+			// Content page should work no matter the app shell type
+			CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
+			await Toast.Make("An error occured").Show(cancellationTokenSource.Token);
+		}
 	}
 
 	private async void NavigateToFlyoutPageDemo_Clicked(object sender, EventArgs e)
 	{
-		await Navigation.PushAsync(new FlyoutPageDemo());
+		try
+		{
+			await Navigation.PushAsync(new FlyoutPageDemo());
+		}
+		catch (Exception ex) 
+		{
+			// because the app shell has a flyout built into it, flyout and tab pages cannot be added.
+			// the app shell must be a simple ShellContent type for these to work
+			CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
+			await Toast.Make("An error occured, check AppShell type").Show(cancellationTokenSource.Token);
+		}
 	}
 
 	private async void NavigateToTabbedPageDemo_Clicked(object sender, EventArgs e)
 	{
-		await Navigation.PushAsync(new TabbedPageDemo());
+		try
+		{
+			await Navigation.PushAsync(new TabbedPageDemo());
+		}
+		catch (Exception ex) 
+		{
+			// because the app shell has a flyout built into it, flyout and tab pages cannot be added.
+			// the app shell must be a simple ShellContent type for these to work
+			CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
+			await Toast.Make("An error occured").Show(cancellationTokenSource.Token);
+		}
 	}
 }

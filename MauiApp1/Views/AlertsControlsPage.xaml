@@ -3,8 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.Views.AlertsControlsPage"
              Title="ToastsControlsPage">
-    
-    <VerticalStackLayout>
+
+    <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
         <Label
                 Text="Toasts examples"
                 Style="{StaticResource Headline}" />
@@ -18,6 +20,17 @@
                 Text="SnackBar message" 
                 Clicked="ShowSnackBar_Clicked"
                 HorizontalOptions="Fill" />
+
+        <Button
+                Text="Display Alert" 
+                Clicked="DisplayAlert_Clicked"
+                HorizontalOptions="Fill" />
+
+        <Button
+                Text="yes or no Alert" 
+                Clicked="YesOrNoDisplayAlert_Clicked"
+                HorizontalOptions="Fill" />
+
     </VerticalStackLayout>
     
 </ContentPage>
