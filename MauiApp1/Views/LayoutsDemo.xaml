@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Views.LayoutsDemo"
+             Title="LayoutsDemo">
+
+    <ScrollView>
+        <VerticalStackLayout 
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                Text="Examples of different MAUI Layouts"
+                Style="{StaticResource Headline}" />
+
+            <Button
+                x:Name="VerticalStackLayoutBtn"
+                Text="Vertical StackLayout" 
+                Clicked="VerticalStackLayoutBtn_Clicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="HorizontalStackLayoutBtn"
+                Text="Horizontal StackLayout" 
+                Clicked="HorizontalStackLayoutBtn_Clicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="GridStackLayoutBtn"
+                Text="Grid Layout" 
+                Clicked="GridStackLayoutBtn_Clicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="FlexLayoutBtn"
+                Text="Flex Layout" 
+                Clicked="FlexLayoutBtn_Clicked"
+                HorizontalOptions="Fill" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

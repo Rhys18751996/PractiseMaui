@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Views.TodoDbCommandsPage"
+             Title="TodoDbCommandsPage">
+
+    <ScrollView>
+        <VerticalStackLayout 
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                Text="sqlite Todo database commands"
+                Style="{StaticResource Headline}" />
+
+            <Button
+                Text="Create seed data" 
+                Clicked="CreateSeedData_Clicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                Text="delete TodoItem table data" 
+                Clicked="DeleteTodoItemTableData_Clicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                Text="Delete entire Todo database" 
+                Clicked="DeleteEntireTodoDatabase_Clicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                Text="Show Todo data in ListView" 
+                Clicked="ShowTodoData_Clicked"
+                HorizontalOptions="Fill" />
+            
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

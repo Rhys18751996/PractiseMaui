@@ -75,49 +75,61 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Views\PagesDemo\PagesDemo.xaml.cs">
+	  <Compile Update="Views\ListViewControlPageDemo.xaml.cs">
+	    <DependentUpon>ListViewControlPageDemo.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\PagesDemo.xaml.cs">
 	    <DependentUpon>PagesDemo.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Views\ControlsDemo\ControlsPage.xaml">
+	  <MauiXaml Update="Controls\FlyoutFooter.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\ControlsDemo\ListViewPageDemo.xaml">
+	  <MauiXaml Update="Controls\FlyoutHeader.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\LayoutsDemo\FlexLayoutDemo.xaml">
+	  <MauiXaml Update="Views\AboutPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\LayoutsDemo\GridLayoutDemo.xaml">
+	  <MauiXaml Update="Views\ControlsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\LayoutsDemo\HorizontalStackLayoutDemo.xaml">
+	  <MauiXaml Update="Views\ListViewControlPageDemo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\LayoutsDemo\LayoutsDemo.xaml">
+	  <MauiXaml Update="Views\FlexLayoutDemo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\LayoutsDemo\StackLayoutPageDemo.xaml">
+	  <MauiXaml Update="Views\GridLayoutDemo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\PagesDemo\ContentPageDemo.xaml">
+	  <MauiXaml Update="Views\HorizontalStackLayoutDemo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\PagesDemo\FlyoutPageDemo.xaml">
+	  <MauiXaml Update="Views\LayoutsDemo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\PagesDemo\PagesDemo.xaml">
+	  <MauiXaml Update="Views\StackLayoutPageDemo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\PagesDemo\TabbedPageDemo.xaml">
+	  <MauiXaml Update="Views\ContentPageDemo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Todo\TodoDbCommandsPage.xaml">
+	  <MauiXaml Update="Views\FlyoutPageDemo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Todo\TodoListPage.xaml">
+	  <MauiXaml Update="Views\PagesDemo.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\TabbedPageDemo.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\TodoDbCommandsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\TodoListPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
